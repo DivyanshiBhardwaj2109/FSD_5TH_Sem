@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="system.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <div class="form-box">
+            <h2>Student Registration Form</h2>
+
+            <form id="studentForm">
+
+                <div class="input-group">
+                    <label>Student Name</label>
+                    <input type="text" id="name" placeholder="Enter student name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Roll Number</label>
+                    <input type="text" id="roll" placeholder="Enter roll number" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Marks</label>
+                    <select id="marks" required>
+                        <option value="">Grade</option>
+                        <option value="90>=A+">A+</option>
+                        <option value="80>=A">A</option>
+                        <option value="70>=B+">B+</option>
+                        <option value="60>=B">B</option>
+                        <option value="50>=C">C</option>
+                    </select>
+                </div>
+
+
+                <div class="input-group">
+                    <label>Course</label>
+                    <select id="course" required>
+                        <option value="">Select Course</option>
+                        <option value="B.Tech CSE">B.Tech CSE</option>
+                        <option value="B.Tech ECE">B.Tech ECE</option>
+                        <option value="B.Tech IT">B.Tech IT</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                    </select>
+                </div>
+                <button type="submit">submit</button>
+
+            </form>
+        </div>
+
+        <div class="table-box">
+            <h2>Student Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                        <th>Course</th>
+                        <th>marks</th>
+                        <th>grade</th>
+                        <th>Action<br>
+                     <button type="edit">edit</button>
+                    <button type="delete">delete</button></th>
+
+                    </tr>
+
+
+                </thead>
+
+                <tbody id="studentTable">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="system.js"></script>
+</body>
+</html>
